@@ -1,6 +1,8 @@
 //import React, { Component } from 'react'
 
-import React from 'react'
+import React from 'react';
+
+
 
 export default function ListContacts(props) {
     return (
@@ -28,7 +30,7 @@ export default function ListContacts(props) {
     )
 }
 
-// export default class ListContacts extends Component {
+// export default class ListContacts extends React.Component {
 //     render() {
 //         console.log("Props",this.props)
 //         return (
@@ -47,9 +49,9 @@ export default function ListContacts(props) {
 //                     <p>{contact.name}</p>
 //                     <p>{contact.handle}</p>
 //                    </div>
-//                        <button className="contact-remove">
-//                             Remove
-//                        </button>
+//                    <button onClick={()=> this.props.onDeleteContact(contact)} className="contact-remove">
+//                                     Remove
+//                                </button>
 //                     </li>
 //                 ))}
 //             </ol>
